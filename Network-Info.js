@@ -201,7 +201,7 @@ function getNetworkInfo(retryTimes = 5, retryInterval = 1000) {
       content:
         getIP() +
         `节点IP：${info.query}\n` +
-        `节点ISP：${info.isp} - ${info.as}\n` +
+        `节点ISP：${info.as}\n` +
         `节点位置：${getFlagEmoji(info.countryCode)} | ${info.country} - ${info.city}`,
       icon: getSSID() ? 'wifi' : 'simcard',
       'icon-color': getSSID() ? '#5A9AF9' : '#8AB8DD',
